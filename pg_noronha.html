@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="imagem/logo_telegram_airplane_air_plane_paper_airplane_icon_143170.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="BaseBoard.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2? family= Nunito+Sans:ital,wght@1,200 & family= Roboto:ital,wght@0,500;1,700 & display=swap');
+            </style>
+            <!-- button de compra -->
+            <style>
+                .button {
+                    border-radius: 10px;
+                    background-color: #8c52ff;
+                    border: none;
+                    color: #FFFFFF;
+                    text-align: center;
+                    font-size: 20px;
+                    padding: 15px;
+                    width: 150px;
+                    transition: all 0.5s;
+                    cursor: pointer;
+                    margin: 5px;
+                    position: relative;
+                    left: 46%;
+                }
+            
+                .button span {
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative;
+                    transition: 0.5s;
+                }
+            
+                .button span:after {
+                    content: '\00bb';
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.5s;
+                }
+            
+                .button:hover span {
+                    padding-right: 25px;
+                }
+            
+                .button:hover span:after {
+                    opacity: 1;
+                    right: 0;
+                }
+                .txt{
+                    text-align: center;
+                    font-size: 20px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    
+                }
+                .card-text{
+                    font-size: 20px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                *{
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            </style>
+</head>
+<body>
+    <!-- navegador -->
+    <nav class="navbar sticky-top navbar-light bg-light">
+    
+        <a class="navbar-brand" href="#">
+    
+            <img src="imagem/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    
+            Dreams Tourism
+    
+        </a>
+    
+        <form class="form-inline">
+    
+            <input class="form-control mr-sm-2" type="search" placeholder="Aonde você quer ir?" aria-label="Pesquisar">
+    
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+    
+        </form>
+    
+        <div class="btn-group dropleft">
+    
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+    
+                Opções
+    
+            </button>
+    
+            <div class="dropdown-menu">
+    
+                <!-- Links do menu dropleft -->     
+                <span class="dropdown-item-text">Suas opções</span>
+                
+                <a class="dropdown-item" href="#">Início</a>
+                
+                <a class="dropdown-item" href="#">Sobre Nós</a>
+                
+                <a class="dropdown-item" href="#">Contato</a>
+                
+                
+                
+                </div>
+                
+                </div>
+                  </nav>
+                <!-- carrosel de img -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="../novo_arquivo_bootstrap/imagensTCC/noronha_1.jpeg" alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="../novo_arquivo_bootstrap/imagensTCC/noronha_2.jpeg" alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="../novo_arquivo_bootstrap/imagensTCC/noronha_4.jpeg" alt="Terceiro Slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+    <!-- legenda -->
+    <div  style="text-align:center ;"> <br> <br>
+        <h3>Pacotes para Fernando de Noronha</h3>
+        <h4>A partir de R$620</h4> <br>  
+    </div>
+    <!--butau de compra-->
+    <div>
+        <a href="pg_compra.html">
+            <button class="button"><span> Comprar </span></button></a>
+    </div>
+  
+   
+<!-- card de Descrição -->
+<div class="card-deck" style="position: relative;   width:90%; left: 5%; top: 25px;">
+    <div class="card" >
+       
+        <div class="card-body">
+            <h3 class="card-title">Onde ficar em Fernando de Noronha?</h3>
+            <p class="card-text">Os melhores bairros para ficar em Fernando de Noronha são:<br><br>
+            
+            Vila dos Remédios <br>
+            Vila do Boldró <br> </p>
+            
+        </div>
+    </div>
+    
+    <div class="card">
+        
+        <div class="card-body">
+            <h3 class="card-title">O que fazer em Fernando de Noronha?</h3>
+            <p class="card-text"> Um dos paraísos do Nordeste brasileiro impressiona quem busca um destino para se divertir 
+                dentro e fora das águas. As 21 ilhas do arquipélago têm muito a oferecer 
+                para aqueles que escolhem Fernando de Noronha como o destino das férias.
+                
+                A ilha principal é bem pequena — somente 17 quilômetros quadrados — e a vida de seus quase 3 mil habitantes 
+                é bem simples e calma. Por isso, uma viagem a Fernando de Noronha é tão intensa e simples 
+                ao mesmo tempo, com experiências totalmente diferentes.</p>
+           
+        </div>
+    </div>
+    <div class="card">
+        
+        <div class="card-body">
+            <h3 class="card-title">Onde comer em Fernando de Noronha?</h3>
+            <p class="card-text"> A culinária característica da ilha dá as caras nos restaurantes 
+                instalados no centro da ilha. Lagosta, polvo, macaxeira, frutas tropicais e 
+                até tubarões entram no cardápio, mas o prato principal de Noronha é o peixe enrolado na folha de bananeira</p>
+            
+        </div>
+        
+    </div>
+    
+  
+    <!-- linha -->
+    <hr width="95%">
+</div>
+ <br> <br>
+<div class="txt">
+<h3>Descrição:</h3>
+<div class="txt" style="font-size: 20px; ">
+    <P> Fernando de Noronha é um arquipélago vulcânico situado a cerca de 350 quilómetros ao largo da costa nordeste do Brasil. <br>
+        Tem o nome da sua maior ilha, um parque marinho e santuário ecológico protegido com uma linha costeira recortada e vários ecossistemas. <br>
+        É reconhecida pelas suas praias pouco urbanizadas e por atividades como mergulho e snorkeling. <br>
+        As tartarugas marinhas, as raias, os golfinhos e os tubarões dos recifes nadam nas águas quentes e cristalinas</p> <br>
+</div>
+</div>
+</div>
+
+<!-- linha -->
+<hr width="95%">
+<!-- legenda -->
+<div class="txt"> <br>
+    <h3>Informações Adicionais:</h3> <br>
+    <div class="txt" style="font-size: 20px; ">
+        <p>
+            - Trilhas <br>
+            - Expedições <br>
+            - Mergulhos <br>
+            - Passeios de barco <br> <br>
+        </p>
+    </div>
+</div>
+
+<!-- linha -->
+<hr width="95%">
+<!-- link js -->
+
+<footer>
+    <div class="boxs">
+      <h2>Início</h2>
+      <ul>
+        <li><a href="inicio.html">Home</li></a>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+    <div class="boxs">
+      <h2>Contato</h2>
+      <ul>
+        <li><a href="#">Endereço</li></a>
+        <li><a href="#">📌Rua Oscar Alho Filho</li></a>
+        <li><a href="#">📞 +55 (11) 97845-6098</a></li>
+      </ul>
+    </div>
+    <div class="boxs">
+      <h2>Suporte</h2>
+      <ul>
+        <li><a href="#">Fale conosco</li></a>
+        <li><a href="#">📧 dreamstourism@gmail.com</li></a>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+    <div class="boxs">
+      <h2>Sobre nós</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam rerum inventore minus! Quae ratione officiis asperiores dolorum necessitatibus aperiam facilis voluptatem similique, eveniet illo itaque, laboriosam omnis aspernatur, quas labore minus consequatur amet rem sapiente!
+      </p>
+    </div>
+  </footer>
+
+  <div class="footer">
+    <img src="imagem/logo.svg" alt="Dreams Tourism" style="width:40px; height: 40px;"><h2 style="position: relative; left: -30%; top: 5px;"></h2>  
+    <div class="sociais">
+      <div class="social">
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+      <div class="social">
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      </div>
+      <div class="social">
+        <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+</html>
